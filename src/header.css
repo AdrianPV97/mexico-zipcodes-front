@@ -1,0 +1,52 @@
+
+
+header{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#e7e7e7;
+    box-shadow: 0px 5px 16px 1px rgba(0,0,0,0.52);
+}
+
+.header-container{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#title-block-header, #title-block-header span{
+    color: #2d2d2d;
+    font-size: 2rem;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#me{
+    color: green !important;
+}
+
+#xi{
+    color: white !important;
+}
+
+#co{
+    color: red !important;
+}
+
+
+#social-block-header{
+    padding: 2px;
+    align-items:start;
+}
+
+.social-space{
+    width: 15%;
+    aspect-ratio: 1/1;
+    background-color:#767676;
+}

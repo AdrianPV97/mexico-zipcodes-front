@@ -1,0 +1,47 @@
+.main-container{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-zipcode{
+    height: 50px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.search input{
+    height: 90%;
+    width: 80%;
+    color:#858585;
+    border: none;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search button{
+    height: 90%;
+    border: none;
+    background: none;
+    aspect-ratio: 1/1;
+}
+
+.search button svg{
+    max-height: 100%;
+}
