@@ -6,8 +6,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#e7e7e7;
-    box-shadow: 0px 5px 16px 1px rgba(0,0,0,0.52);
+    background-color:black;
 }
 
 .header-container{
@@ -20,7 +19,7 @@ header{
 }
 
 #title-block-header, #title-block-header span{
-    color: #2d2d2d;
+    color: white;
     font-size: 2rem;
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;

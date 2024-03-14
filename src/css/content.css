@@ -1,27 +1,46 @@
 .main-container{
     width: 100vw;
     height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    /* align-items: center;  */
+    /* justify-content: center; */
+}
+
+.search-zipcode label{
+    display: block;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .search-zipcode{
-    height: 50px;
+    height: 100px;
     width: 50%;
+    margin: auto;
+    margin-top: 50px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    background-color: red;
+    /* align-items: center;
+    justify-content: center; */
 }
 
 .search{
-    height: 90%;
+    height: 50%;
     width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-radius: 50px;
+    border: solid 2px #c9c9c9;
     background-color: white;
+    margin: auto;
+}
+
+.error-message{
+    margin-left: 50px;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: red;
 }
 
 .search input{
@@ -44,4 +63,16 @@
 
 .search button svg{
     max-height: 100%;
+    color: #c9c9c9;
 }
+
+.card-block-item{
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ececec;
+}
+
