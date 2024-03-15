@@ -5,6 +5,7 @@ import './css/options.css';
 import SearchZipcodes from './components/searchZipCodes';
 import ZipcodeList from './components/zipcodeList';
 import OptionsMenu from './components/optionsMenu';
+import InfoCard from './components/infoCard';
 
 
 function Content(){
@@ -34,6 +35,7 @@ function Content(){
             <SearchZipcodes enviarCodigo={peticion} />
             {post != null ? <ZipcodeList datos={post}/> : null}
             <OptionsMenu/>
+            <InfoCard/>
             
         </div>
         
