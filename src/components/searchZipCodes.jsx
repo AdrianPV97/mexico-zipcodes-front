@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 
 
-function SearchZipcodes({peticion}) {
+function SearchZipcodes({enviarCodigo}) {
     const [error, setError] = useState("");
     const [code, setCode] = useState("");
 
@@ -17,7 +17,7 @@ function SearchZipcodes({peticion}) {
 
     function enviarFormulario(evt) {
         evt.preventDefault();
-        peticion();
+        enviarCodigo();
         // console.log(evt.target.zpcode.value.length);
         // if (evt.target.zpcode.value.length = 5) {
         //     console.log("Enviando.....")

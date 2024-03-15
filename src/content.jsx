@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './css/content.css';
+import './css/options.css';
 import SearchZipcodes from './components/searchZipCodes';
 import ZipcodeList from './components/zipcodeList';
+import OptionsMenu from './components/optionsMenu';
 
 
 function Content(){
@@ -11,11 +13,16 @@ function Content(){
     const peticion = async(codigo) =>{
         try{
             axios.get("https://jsonplaceholder.typicode.com/posts/1").then((res)=>{
+            //console.log(res.data);
             setPost(res.data)
             });
         }catch(err){
             setPost(err);
         }
+    }
+
+    const funcionPrueba = ()=>{
+        console.log("Funciona funcion prueba!");
     }
     
 
@@ -25,7 +32,9 @@ function Content(){
     return(
         <div className="main-container">
             <SearchZipcodes enviarCodigo={peticion} />
-            <ZipcodeList datos={post}/>
+            {post != null ? <ZipcodeList datos={post}/> : null}
+            <OptionsMenu/>
+            
         </div>
         
     )

@@ -1,0 +1,31 @@
+.menu-cont{
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    /* background-color: aqua; */
+
+    display: flex;
+    justify-content: space-around;
+
+    font-size: 0.5rem;
+    font-weight: 900;
+}
+
+.menu-cont button{
+    background: none;
+    border: none;
+    color: #616161;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-cont button:hover{
+    color:#2d2d2d;
+}
+
+.menu-cont svg{
+    margin: auto;
+    display: block;
+    max-height: 50%;
+}
